@@ -11,7 +11,7 @@ test = ["flake8 (==3.7.8)", "hypothesis (==3.55.3)"]
 
 [[package]]
 name = "maxconsole"
-version = "0.2.0"
+version = "0.3.0"
 description = "Themed Rich Conosle"
 category = "main"
 optional = false
@@ -49,7 +49,7 @@ jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "8b07d7f6bd2e53b057f22fdcc9726a40f7dec8079198b36d36a9f6db6e095570"
+content-hash = "fd316f8e23a8f3e068c55a34057c4d381b76de35b9081652e8d8c627125f635c"
 
 [metadata.files]
 commonmark = [
@@ -57,8 +57,8 @@ commonmark = [
     {file = "commonmark-0.9.1.tar.gz", hash = "sha256:452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60"},
 ]
 maxconsole = [
-    {file = "maxconsole-0.2.0-py3-none-any.whl", hash = "sha256:ab816c217dd7fa4009cc820a9518164b873378387a44fa993736db578ecd8603"},
-    {file = "maxconsole-0.2.0.tar.gz", hash = "sha256:88f8e8b1d5b261b62d693f178668413b782fa4898712fd45de267dae3d9a4fbf"},
+    {file = "maxconsole-0.3.0-py3-none-any.whl", hash = "sha256:f42169634a03ecc06ccf8d6857010484fd4330dbdfc5fc91f40f8a5471fbd246"},
+    {file = "maxconsole-0.3.0.tar.gz", hash = "sha256:e34a6ac8df68ca43c4e851fff6fee3f85eb47a8626db62ba600818da36123300"},
 ]
 pygments = [
     {file = "Pygments-2.13.0-py3-none-any.whl", hash = "sha256:f643f331ab57ba3c9d89212ee4a2dabc6e94f117cf4eefde99a0574720d14c42"},

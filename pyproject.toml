@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "maxcolor"
-version = "0.5.0"
+version = "0.6.0"
 description = "A module to genereate gradient text and rich panels."
 authors = ["maxludden <dev@maxludden.com>"]
 license = "MIT"
@@ -8,8 +8,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-maxconsole = "^0.2.0"
 rich = "^12.6.0"
+maxconsole = "^0.3.0"
 
 [tool.poetry.scripts]
 maxcolor = "maxcolor:main"

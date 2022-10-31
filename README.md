@@ -6,6 +6,10 @@ Date: 2022-10-31 7:28 AM EST
 CSS: static/style.css
 ...
 
+# maxcoler 0.6.0
+
+Updated dependencies to work with the other helper packages: maxconsole and max progress.
+
 # maxcolor 0.5.0
 
 ## Purpose

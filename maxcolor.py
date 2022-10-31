@@ -22,7 +22,7 @@ from rich.text import Text, TextType
 theme = get_theme()
 console = get_console(theme)
 
-__version__ = "0.5.0"
+__version__ = "0.6.0"
 
 class InvalidHexColor(ColorParseError):
     pass
