@@ -1,16 +1,17 @@
----
-Title: README.md
-Path: README.md
-Author: Max Ludden
-Date: 2022-10-31 7:28 AM EST
-CSS: static/style.css
-...
+# max<span style="color:red;">c</span><span style="color:orange;">o</span><span style="color:yellow;">l</span><span style="color:green;">o</span><span style="color:bright_blue;"><span style="color:blue;">r</span></span>
 
-# maxcoler 0.6.0
+# Updated to 1.0.0
+
+Everything works and should remain stable for the forseeable future.
+Please enjoy max<span style="color:red;">c</span><span style="color:orange;">o</span><span style="color:yellow;">l</span><span style="color:green;">o</span><span style="color:bright_blue;"><span style="color:blue;">r</span></span>:
+
+![maxcolor_demo](static/GradientDemo.png)
+
+# max<span style="color:red;">c</span><span style="color:orange;">o</span><span style="color:yellow;">l</span><span style="color:green;">o</span><span style="color:bright_blue;"><span style="color:blue;">r</span></span> 0.6.0
 
 Updated dependencies to work with the other helper packages: maxconsole and max progress.
 
-# maxcolor 0.5.0
+# max<span style="color:red;">c</span><span style="color:orange;">o</span><span style="color:yellow;">l</span><span style="color:green;">o</span><span style="color:bright_blue;"><span style="color:blue;">r</span></span> 0.5.0
 
 ## Purpose
 
@@ -61,7 +62,7 @@ python add maxcolor
 
 <br />
 
-The following are available to import from `maxcolor`:
+The following are available to import from max<span style="color:red;">c</span><span style="color:orange;">o</span><span style="color:yellow;">l</span><span style="color:green;">o</span><span style="color:bright_blue;"><span style="color:blue;">r</span></span>.
 
 ### Color Regular Expressions
 
@@ -124,7 +125,8 @@ console.print(
 <br />
 
 ## Gradient Panel
-Somtimes you need something more formal than a gradient, though. For that, you can use the gradient_panel function. This function takes a string, an optional number of colors (defaults to 4), and an optional justification (defaults to "left"). It will return a panel with the gradient text, and optionally, gradient title.
+
+Sometimes you need something more formal than a gradient, though. For that, you can use the gradient_panel function. This function takes a string, an optional number of colors (defaults to 4), and an optional justification (defaults to "left"). It will return a panel with the gradient text, and optionally, gradient title.
 
 ```python
 text = "\tEnim tempor veniam proident. Reprehenderit deserunt do duis laboris laborum consectetur fugiat deserunt officia officia eu consequat. Aute sint occaecat adipisicing eu aute. Eu est laborum enim deserunt fugiat nostrud officia do ad cupidatat enim amet cillum amet. Consectetur occaecat ex quis irure cupidatat amet occaecat ad sit adipisicing pariatur est velit mollit voluptate. Eiusmod deserunt nisi voluptate irure. Sunt irure consectetur veniam dolore elit officia et in labore esse esse cupidatat labore. Fugiat enim irure ipsum eiusmod consequat irure commodo cillum.\n\n\tReprehenderit ea quis aliqua qui labore enim consequat ea nostrud voluptate amet reprehenderit consequat sunt. Ad est occaecat mollit qui sit enim do esse aute sint nulla sint laborum. Voluptate veniam ut Lorem eiusmod id veniam amet ipsum labore incididunt. Ex in consequat voluptate mollit nisi incididunt pariatur ipsum ut eiusmod ut cupidatat elit. Eu irure est ad nulla exercitation. Esse elit tempor reprehenderit ipsum eu officia sint.\n\n\tCupidatat officia incididunt cupidatat minim fugiat sit exercitation ullamco occaecat est officia ut occaecat labore. Id consectetur cupidatat amet aute. Pariatur nostrud enim reprehenderit aliqua. Elit deserunt excepteur aute aliquip."
