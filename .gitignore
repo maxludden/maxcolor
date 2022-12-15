@@ -159,3 +159,4 @@ cython_debug/
 #.idea/
 
 *.ai
+.DS_Store
