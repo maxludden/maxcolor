@@ -5,7 +5,7 @@ from typing import Optional, Tuple
 from functools import lru_cache
 from pathlib import Path
 
-from maxconsole import get_console, get_theme
+from maxconsole import MaxConsole
 from rich import print
 from rich.align import AlignMethod
 from rich.box import ROUNDED, Box
@@ -16,8 +16,8 @@ from rich.panel import Panel
 from rich.style import StyleType
 from rich.text import Text, TextType
 
-theme = get_theme()
-console = get_console(theme)
+
+console = MaxConsole()
 
 __version__ = "1.0.0"
 

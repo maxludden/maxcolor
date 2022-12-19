@@ -1,0 +1,51 @@
+[[package]]
+name = "commonmark"
+version = "0.9.1"
+summary = "Python parser for the CommonMark Markdown spec"
+
+[[package]]
+name = "maxconsole"
+version = "0.5.1"
+requires_python = ">=3.10"
+summary = "MaxConsole instantiates a customizable themed wrapper around the awesome Rich Library's Console."
+dependencies = [
+    "rich>=12.6.0",
+]
+
+[[package]]
+name = "pygments"
+version = "2.13.0"
+requires_python = ">=3.6"
+summary = "Pygments is a syntax highlighting package written in Python."
+
+[[package]]
+name = "rich"
+version = "12.6.0"
+requires_python = ">=3.6.3,<4.0.0"
+summary = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
+dependencies = [
+    "commonmark<0.10.0,>=0.9.0",
+    "pygments<3.0.0,>=2.6.0",
+]
+
+[metadata]
+lock_version = "3.1"
+content_hash = "sha256:d8e2cf0e79b773686017a4ac95dddec4e98a0013591b5dc1b27d2d0ba863c8ae"
+
+[metadata.files]
+"commonmark 0.9.1" = [
+    {file = "commonmark-0.9.1-py2.py3-none-any.whl", hash = "sha256:da2f38c92590f83de410ba1a3cbceafbc74fee9def35f9251ba9a971d6d66fd9"},
+    {file = "commonmark-0.9.1.tar.gz", hash = "sha256:452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60"},
+]
+"maxconsole 0.5.1" = [
+    {file = "maxconsole-0.5.1-py3-none-any.whl", hash = "sha256:3ae40d47da80838d2f9b6fb783e387c4cc3dd63d7ce2fe8d0795d91fdfc38ddc"},
+    {file = "maxconsole-0.5.1.tar.gz", hash = "sha256:59403c1d135b84e45370523c3e565b5f8e9d51bb8498fe40ee49c8e3cce9e545"},
+]
+"pygments 2.13.0" = [
+    {file = "Pygments-2.13.0-py3-none-any.whl", hash = "sha256:f643f331ab57ba3c9d89212ee4a2dabc6e94f117cf4eefde99a0574720d14c42"},
+    {file = "Pygments-2.13.0.tar.gz", hash = "sha256:56a8508ae95f98e2b9bdf93a6be5ae3f7d8af858b43e02c5a2ff083726be40c1"},
+]
+"rich 12.6.0" = [
+    {file = "rich-12.6.0-py3-none-any.whl", hash = "sha256:a4eb26484f2c82589bd9a17c73d32a010b1e29d89f1604cd9bf3a2097b81bb5e"},
+    {file = "rich-12.6.0.tar.gz", hash = "sha256:ba3a3775974105c221d31141f2c116f4fd65c5ceb0698657a11e9f295ec93fd0"},
+]

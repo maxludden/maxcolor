@@ -1,6 +1,6 @@
 # max<span style="color:red;">c</span><span style="color:orange;">o</span><span style="color:yellow;">l</span><span style="color:green;">o</span><span style="color:bright_blue;"><span style="color:blue;">r</span></span>
 
-# Updated to 1.0.0
+# Updated to 1.0.1
 
 Everything works and should remain stable for the forseeable future.
 Please enjoy max<span style="color:red;">c</span><span style="color:orange;">o</span><span style="color:yellow;">l</span><span style="color:green;">o</span><span style="color:bright_blue;"><span style="color:blue;">r</span></span>:
