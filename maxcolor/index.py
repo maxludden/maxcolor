@@ -69,7 +69,8 @@ log_log = log.add(
 
 class ColorIndex:
     """Generate a list of indexes from which to make a color gradient."""
-    title: str|None
+
+    title: str | None
     start: int | None
     end: int | None
     indexes: list[int]
@@ -84,7 +85,7 @@ class ColorIndex:
         end: Optional[int] = None,
         invert: Optional[bool] = False,
         num_of_index: int = 3,
-        title: Optional[str] = None
+        title: Optional[str] = None,
     ):
         """Generate a list of indexes from start to end.
 
@@ -107,7 +108,7 @@ class ColorIndex:
         if self.end == None:
             self.random = True
             self.num_of_index = num_of_index
-        
+
         self.next_index = -1
 
         if self.start:
@@ -118,12 +119,15 @@ class ColorIndex:
                 )
             else:
                 self.random = True
-                log.debug(f'[bold][italic #cf75ff]self[/italic #cf75ff][#ffffff].random: [/#ffffff][#ff00ff]{self.random}[/][/bold]')
-                
+                log.debug(
+                    f"[bold][italic #cf75ff]self[/italic #cf75ff][#ffffff].random: [/#ffffff][#ff00ff]{self.random}[/][/bold]"
+                )
+
         else:
             self.random = True
-            log.debug(f'[bold][italic #cf75ff]self[/italic #cf75ff][#ffffff].random: [/#ffffff][#ff00ff]{self.random}[/][/bold]')
-            
+            log.debug(
+                f"[bold][italic #cf75ff]self[/italic #cf75ff][#ffffff].random: [/#ffffff][#ff00ff]{self.random}[/][/bold]"
+            )
 
         if self.start == None:
             self.start = self._generate_start()
@@ -141,8 +145,9 @@ class ColorIndex:
             self.invert = invert
         else:
             self.invert = False
-        log.debug(f'[bold][italic #cf75ff]self[/italic #cf75ff][#ffffff].invert: [/#ffffff][#ff00ff]{self.invert}[/][/bold]')
-        
+        log.debug(
+            f"[bold][italic #cf75ff]self[/italic #cf75ff][#ffffff].invert: [/#ffffff][#ff00ff]{self.invert}[/][/bold]"
+        )
 
         # Generate Indexes from start and stop values
         self.indexes = self._generate_indexes()
@@ -194,7 +199,6 @@ class ColorIndex:
         else:
             table_title = f"[bold #00ffff]{self.title}[/]"
         table = Table(
-            
             title=table_title,
             box=ROUNDED,
             border_style="bold #ffffff",
@@ -203,16 +207,15 @@ class ColorIndex:
         )
         table.add_column("[bold #ffffff]Variable[/]", justify="left", ratio=1)
         table.add_column(
-            "[bold #ffffff]Value[/]", justify="center", ratio=3, min_width=70
+            "[bold #ffffff]Value[/]", justify="center", ratio=3
         )
-        table.add_column("[bold #ffffff]Generated[/]", justify="center", ratio=1)
-        table.add_row("Start", f"{self.start}", f"{start_gen}")
-        table.add_row("End", f"{self.end}", f"{end_gen}")
-        table.add_row("Inverted", f"{self.invert}", "[dim]n/a[/dim]")
-        table.add_row("Index", f"[bold #cf75ff]{body}[/]", "[bold #00ff00]True[/]")
+        table.add_row("Start", f"{self.start}")
+        table.add_row("End", f"{self.end}")
+        table.add_row("Inverted", f"{self.invert}")
+        table.add_row("Index", f"[bold #cf75ff]{body}[/]")
         return table
 
-    def validate__end(self, __end: int) -> int:
+    def __validate__end(self, __end: int) -> int:
         if self.invert:
             if __end < 0:
                 return __end + 9
@@ -268,16 +271,13 @@ class ColorIndex:
             step = 1
             bump_end = 1
 
-
-
         __end = self.start + (self.num_of_index * step)
         log.debug(f"[italic bold #cc75ff]__end[/][bold #ffffff] {__end}[/]")
 
-        _end = self.validate__end(__end)
+        _end = self.__validate__end(__end)
         log.debug(f"[italic bold #cc75ff]_end[/][bold #ffffff] {_end}[/]")
 
         return _end
-
 
     def _generate_indexes(self) -> list[int]:
         """Generate a sequence of integers from which to generate a gradient.
@@ -292,28 +292,17 @@ class ColorIndex:
         """
         # Input Validation
         if self.start == None:
-            start = self._generate_start()
-            self.start = start
+            self.start = self._generate_start()
 
         if self.num_of_index == None:
-            num_of_index = 3
+            self.num_of_index = 3
 
         if self.invert == None:
-            if self.invert:
-                invert = self.invert
-            else:
-                invert = False
-                self.invert = invert
+            self.invert = False
 
         if self.end == None:
-            if self.end:
-                end = self.end
-            else:
-                end = self._random_end(
-                    self.start, invert=invert, num_of_index=num_of_index
-                )
-                self.end = end
-
+            self.end  = self._generate_end()
+               
         # Generate Index
         # If index is inverted
         if self.invert:
@@ -344,7 +333,7 @@ if __name__ == "__main__":
     console.clear()
     console.print("\n\n")
     console.print(color_index1, justify="center")
-    color_index2 = ColorIndex(9,6,True,title="Color Index 2")
-    console.print(color_index2, justify='center')
+    color_index2 = ColorIndex(9, 6, True, title="Color Index 2")
+    console.print(color_index2, justify="center")
     color_index3 = ColorIndex(title="Color Index 3")
     console.print(color_index3, justify="center")
