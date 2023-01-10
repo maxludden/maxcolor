@@ -8,6 +8,8 @@ authors = [
 dependencies = [
     "maxconsole>=0.5.1",
     "rich>=12.6.0",
+    "colr[all]>=0.9.1",
+    "loguru>=0.6.0",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
